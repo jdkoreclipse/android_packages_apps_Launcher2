@@ -409,7 +409,7 @@ public class Workspace extends SmoothPagedView
             }
         };
 
-        mSnapVelocity = 600;
+        mSnapVelocity = 100;
         mWallpaperOffset = new WallpaperOffsetInterpolator();
         Display display = mLauncher.getWindowManager().getDefaultDisplay();
         mDisplayWidth = display.getWidth();
