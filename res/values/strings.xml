@@ -250,5 +250,8 @@ s -->
     <string name="folder_renamed">Folder renamed to %1$s</string>
     <!-- Folder name format -->
     <string name="folder_name_format">Folder: %1$s</string>
-
+    <!-- Launcher preferences title -->
+    <string name="launcher_settings_title">Launcher settings</string>
+    <!-- Preference title for launcher orientation -->
+    <string name="auto_rotate_launcher_title">Auto-rotate launcher</string>
 </resources>

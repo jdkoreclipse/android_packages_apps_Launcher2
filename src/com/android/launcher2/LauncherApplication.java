@@ -38,7 +38,7 @@ public class LauncherApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
+        Preferences.getInstance().setContext(this);
         // set sIsScreenXLarge and sScreenDensity *before* creating icon cache
         final int screenSize = getResources().getConfiguration().screenLayout &
                 Configuration.SCREENLAYOUT_SIZE_MASK;
@@ -85,6 +85,7 @@ public class LauncherApplication extends Application {
 
         ContentResolver resolver = getContentResolver();
         resolver.unregisterContentObserver(mFavoritesObserver);
+        Preferences.getInstance().setContext(null);
     }
 
     /**

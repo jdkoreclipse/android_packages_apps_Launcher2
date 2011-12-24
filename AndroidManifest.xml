@@ -93,6 +93,13 @@
                 android:resource="@xml/wallpaper_picker_preview" />
         </activity>
 
+        <activity android:name="com.android.launcher2.SettingsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name="com.android.launcher2.RocketLauncher"
             android:label="@string/dream_name"
             android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:title="@string/launcher_settings_title"
+    android:key="launcher_preferences">
+
+    <CheckBoxPreference
+        android:key="auto_rotate_launcher"
+        android:title="@string/auto_rotate_launcher_title"
+        android:defaultValue="true"/>
+
+</PreferenceScreen>
+

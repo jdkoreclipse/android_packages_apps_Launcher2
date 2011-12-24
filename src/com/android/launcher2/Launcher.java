@@ -551,6 +551,11 @@ public final class Launcher extends Activity
     @Override
     protected void onResume() {
         super.onResume();
+        if (Preferences.getInstance().getOrientate()) {
+            this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_USER);
+        } else {
+            this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
+        }
         mPaused = false;
         if (mRestoring || mOnResumeNeedsLoad) {
             mWorkspaceLoading = true;
